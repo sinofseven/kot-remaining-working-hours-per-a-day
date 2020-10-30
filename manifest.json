@@ -10,5 +10,5 @@
             "js": ["index.js"]
         }
     ],
-    "permissions": ["activeTab", "https://s2.kingtime.jp/admin/*"]
+    "permissions": ["https://s2.kingtime.jp/admin/*"]
 }
