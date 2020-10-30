@@ -1,6 +1,6 @@
 {
     "manifest_version": 2,
-    "name": "kot-avg-working-hours",
+    "name": "kot-remaining-working-hours-per-a-day",
     "version": "0.1.0",
     "content_scripts": [
         {
