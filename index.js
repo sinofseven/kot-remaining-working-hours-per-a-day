@@ -22,7 +22,7 @@ function main() {
     const absence = getElementNumber("欠勤", "div.absent_count");
     const paidHoliday = getHolidayCountElementNumber("有休", ".specific-daysCount_1 > li:nth-child(4) > div:nth-child(2)");
     const compensatoryHoliday = getHolidayCountElementNumber("代休", ".specific-daysCount_1 > li:nth-child(5) > div:nth-child(2)");
-    const specialLeave = getHolidayCountElementNumber("特別休暇", ".specific-daysCount_1 > li:nth-child(6) > div:nth-child(2)");
+    const specialLeave = getSpecialHolidayCountElementNumber("特別休暇", ".specific-daysCount_1 > li:nth-child(6) > div:nth-child(2)");
     const workingSum = getElementNumber("労働合計", "body > div > div.htBlock-mainContents > div > div.htBlock-normalTable.specific-table > table > tbody > tr > td.custom13");
 
     console.log("pre calc")
@@ -97,6 +97,20 @@ function getHolidayCountElementNumber(name, selector) {
     const text = cell.textContent.split("(")[0];
     const num = Number(text);
     if (isNaN(num)) throw new Error(`${name}の数値変換に失敗しました`);
+    return num;
+}
+
+function getSpecialHolidayCountElementNumber(name, selector) {
+    /**
+     * 日数集計の特別休暇の要素のを数値変換して取得する
+     * @param name {string} 要素の名前 (エラー出力に使用する)
+     * @param selector {string} 要素のCSS Selector
+     */
+    const cell = document.querySelector(selector);
+    if (cell == null) throw new Error(`${name}の取得に失敗しました`);
+    const text = cell.textContent.split("/")[0];
+    const num = Number(text);
+    if (isNaN(num)) throw new Error(`${name}の数値変換に失敗しました`)
     return num;
 }
 
