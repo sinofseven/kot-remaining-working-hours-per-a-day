@@ -17,13 +17,13 @@ function main() {
 
     // 表からのデータ取得
     const laborStandardsTime = getElementNumber("労働基準時間", ".specific-table_800 > tbody:nth-child(2) > tr:nth-child(1) > td:nth-child(1)");
-    const overAndUnderTime = getElementNumber("過不足時間", "td.custom14") * -1;
+    const overAndUnderTime = getElementNumber("過不足時間", "td.custom8") * -1;
     const workday = getElementNumber("平日", "div.work_count");
     const absence = getElementNumber("欠勤", "div.absent_count");
     const paidHoliday = getHolidayCountElementNumber("有休", ".specific-daysCount_1 > li:nth-child(4) > div:nth-child(2)");
     const compensatoryHoliday = getHolidayCountElementNumber("代休", ".specific-daysCount_1 > li:nth-child(5) > div:nth-child(2)");
     const specialLeave = getSpecialHolidayCountElementNumber("特別休暇", ".specific-daysCount_1 > li:nth-child(6) > div:nth-child(2)");
-    const workingSum = getElementNumber("労働合計", "body > div > div.htBlock-mainContents > div > div.htBlock-normalTable.specific-table > table > tbody > tr > td.custom13");
+    const workingSum = getElementNumber("労働合計", "body > div > div.htBlock-mainContents > div > div.htBlock-normalTable.specific-table > table > tbody > tr > td.custom7");
 
     console.log("pre calc")
 
