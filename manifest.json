@@ -10,7 +10,7 @@
             "js": ["index.js"]
         }
     ],
-    "permissions": ["https://s2.kingtime.jp/admin/*"],
+    "host_permissions": ["https://s2.kingtime.jp/admin/*"],
     "browser_specific_settings": {
         "gecko": {
             "id" : "{45d261f4-a160-43de-9fa2-7c8a22fe4bee}"
