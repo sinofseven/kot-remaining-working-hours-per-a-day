@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: \
+      - run: |
           mkdir package
           cp manifest.json package/
           cp index.js package/
