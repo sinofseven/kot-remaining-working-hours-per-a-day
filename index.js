@@ -3,9 +3,13 @@ function isTimeCard() {
      * KoTのタイムカードのページか判定する
      * @return {boolean}
      */
-    const title = document.querySelector("h1.htBlock-pageTitle");
-    if (title == null) return false;
-    return title.textContent.includes("タイムカード");
+    const elements = document.querySelectorAll("h1");
+    for (const title of elements) {
+        if (title.textContent.includes("タイムカード")) {
+            return true;
+        }
+    }
+    return false;
 }
 
 function main() {
