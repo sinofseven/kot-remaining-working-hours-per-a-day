@@ -13,7 +13,7 @@
     "permissions": ["https://s2.kingtime.jp/admin/*"],
     "browser_specific_settings": {
         "gecko": {
-            "id" : "link.luciferous.firefox.kot-remaining-working-hours-per-a-day"
+            "id" : "kot-remaining-working-hours-per-a-day@luciferous.link"
         }
     }
 }
