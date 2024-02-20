@@ -10,5 +10,10 @@
             "js": ["index.js"]
         }
     ],
-    "permissions": ["https://s2.kingtime.jp/admin/*"]
+    "permissions": ["https://s2.kingtime.jp/admin/*"],
+    "browser_specific_settings": {
+        "gecho": {
+            "id" : "link.luciferous.firefox.kot-remaining-working-hours-per-a-day"
+        }
+    }
 }
