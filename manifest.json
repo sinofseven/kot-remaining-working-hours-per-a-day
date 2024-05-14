@@ -5,12 +5,20 @@
     "content_scripts": [
         {
             "matches": [
-                "https://s2.kingtime.jp/admin/*"
+                "https://s2.kingtime.jp/admin/*",
+                "https://s3.kingtime.jp/admin/*",
+                "https://s2.ta.kingoftime.jp/admin/*",
+                "https://s3.ta.kingoftime.jp/admin/*"
             ],
             "js": ["index.js"]
         }
     ],
-    "host_permissions": ["https://s2.kingtime.jp/admin/*"],
+    "host_permissions": [
+        "https://s2.kingtime.jp/admin/*",
+        "https://s3.kingtime.jp/admin/*",
+        "https://s2.ta.kingoftime.jp/admin/*",
+        "https://s3.ta.kingoftime.jp/admin/*"
+    ],
     "browser_specific_settings": {
         "gecko": {
             "id" : "{45d261f4-a160-43de-9fa2-7c8a22fe4bee}"
