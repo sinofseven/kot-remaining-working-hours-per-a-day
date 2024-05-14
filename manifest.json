@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "kot-remaining-working-hours-per-a-day",
-    "version": "0.2.4",
+    "version": "0.2.5",
     "content_scripts": [
         {
             "matches": [
